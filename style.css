@@ -2,20 +2,38 @@ body{
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      background-color: black;
 }
 
 .navigation{
-      background-color: red;
+      background-color: rgba(45, 44, 39, 0.873);
       display: flex;
-      justify-content: space-evenly;
+     justify-content: space-between;
 }
-/* .right-nav{
-      display: flex;
-      justify-content: flex-start;
-}*/
+
+.right-nav{
+      margin: 0 0 0 10px;
+      width: 80px;
+      text-align: center;
+}
+
+.header-profile{
+      font-size: 18px;
+      color: white;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 .left-nav{
+      width: 200px;
       display: flex;
-      background-color: pink;
+      margin: 0 10px 0 0;
+      color: white;
       justify-content: space-between;
+      cursor: pointer;
+      & p:hover{
+            text-decoration: solid 5px;
+            border-bottom-style: solid;
+            border-bottom-color: red;
+      }
 } 
+
