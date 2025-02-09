@@ -1,17 +1,23 @@
-body{
+*{
       padding: 0;
       margin: 0;
       box-sizing: border-box;
+      color: white;
+}
+body{
       background-color: black;
 }
 
 .navigation{
+      width: 100%;
+      height: 50px;
       background-color: rgba(45, 44, 39, 0.873);
       display: flex;
-     justify-content: space-between;
+      justify-content: space-between;
+      align-items: center;
 }
 
-.right-nav{
+.left-nav{
       margin: 0 0 0 10px;
       width: 80px;
       text-align: center;
@@ -23,17 +29,84 @@ body{
       font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.left-nav{
+.right-nav{
       width: 200px;
-      display: flex;
       margin: 0 10px 0 0;
       color: white;
-      justify-content: space-between;
       cursor: pointer;
-      & p:hover{
+      & .right_nav_list{
+            display: flex;
+            justify-content: space-evenly;
+      }
+      & li{
+            list-style: none;
+      }
+      & li:hover{
             text-decoration: solid 5px;
             border-bottom-style: solid;
-            border-bottom-color: red;
+            border-bottom-color: rgb(0, 145, 255);
       }
 } 
+
+/* hero section  */
+
+.hero_sec{
+      width: 100%;
+      height: 100%;
+      margin-top: 100px;
+      display: flex;
+      justify-content: space-evenly;
+}
+
+.about{
+    width: 50%;
+    & .name{
+      margin-bottom: 15px;
+    }
+    & p{
+      font-size: 13px;
+      line-height: 19px;
+    }
+}
+
+.my_name{
+      color: rgb(0, 166, 255);
+      font-weight: 800;
+      font-size: 40px;
+      letter-spacing: 3px;
+      line-height: 5px;
+}
+
+.my_name:hover{
+      text-decoration: solid 2px;
+      text-decoration: underline;
+      border-bottom-color: rgb(0, 145, 255);
+}
+
+.social-links{
+      width: 180px;
+      margin-top: 15px;
+      & .links{
+            display: flex;
+            justify-content: space-evenly;
+            
+      }
+      & li{
+            list-style: none;
+      }
+      & img{
+           height: 28px;
+           padding: 3px;
+      }
+      & img:hover{
+            border: 2px solid rgb(0, 145, 255);
+            border-radius: 50%;
+            background-color: white;
+      }
+}
+
+.image img{
+      width: 350px;
+      height: 250px;
+}
 
