@@ -112,6 +112,7 @@ body{
 
 @media (max-width: 870px) {
       .hero_sec{
+
             margin: 20px 0 0 0;
             /* width: 100%; */
             display: flex;
@@ -146,6 +147,8 @@ body{
       }
 }
 
+
+
 /* About section  */
 
 .sections{
@@ -167,7 +170,7 @@ body{
       justify-content: space-evenly;
       align-items: center; 
       gap: 20px;
-      margin: 20px 0 109px 0;
+      margin: 20px 20px 109px 10px;
       & .imag{
             width: 350px;
       }
@@ -179,6 +182,7 @@ body{
 
 .about_desc{
       width: 650px;
+      /* margin-right: 10px; */
       & p{
             font-size: 15px;
             line-height: 19px;
@@ -203,10 +207,52 @@ body{
       row-gap: 25px;
       gap: 25px;
       margin: 20px 0 90px 0;
+      cursor: pointer;
       & .skill_list{
             width: 95px;
             height: 130px;
             background-color: gray;
             border-radius: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            & img{
+                  width: 55px;
+
+            }
+            & p{
+                  text-align: center;
+                  font-size: 13px;
+                  margin-top: 10px;
+            }
       }
 }
+
+.skill_list:hover{
+      background-color: rgba(0, 145, 255, 0.438);
+}
+
+@media (max-width: 585px) {
+      .navigation, .hero_sec, .sections{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+      }
+
+      .img_about{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            & .about_desc{
+                  /* margin-left: 15px; */
+                  text-align: center;
+            }
+      }
+      .imag img{
+            width: 320px;
+      }
+}
+
+
