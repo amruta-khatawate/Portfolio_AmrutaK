@@ -183,6 +183,10 @@ body{
 .about_desc{
       width: 650px;
       /* margin-right: 10px; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       & p{
             font-size: 15px;
             line-height: 19px;
@@ -193,10 +197,12 @@ body{
 
       border-style: none;
       padding: 8px 10px ;
-      margin: 5px 0 0 0;
+      margin: 15px 0 0 0;
       background-color: black;
       border: .5px solid white;
       border-radius: 8px;
+      /* display: flex; */
+      align-items: center;
       & a{
             text-decoration: none;
       }
@@ -229,7 +235,8 @@ body{
       & .skill_list{
             width: 95px;
             height: 130px;
-            background-color: gray;
+            /* background-color: gray; */
+            border: 1px solid rgb(0, 145, 255);
             border-radius: 15%;
             display: flex;
             flex-direction: column;
@@ -250,6 +257,7 @@ body{
 
 .skill_list:hover{
       background-color: rgba(0, 145, 255, 0.438);
+      box-shadow: 2px 5px 8px rgba(0, 145, 255, 0.252);
 }
 
 @media (max-width: 585px) {
@@ -274,3 +282,44 @@ body{
 }
 
 
+.projects_container{
+      width: 100%;
+      /* background-color: red; */
+      margin: 25px  0;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+}
+
+.project_list{
+      width: 130px;
+      /* background-color: rgba(128, 128, 128, 0.691); */
+      border: 1px solid rgb(0, 145, 255);
+      height: 150px;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      & button{
+            border-style: none;
+            background-color:transparent;
+            margin-top: 8px;
+            & a{
+                  color: rgb(0, 145, 255);
+                  text-decoration: none;
+                  font-size: 10px;
+            }
+      }
+}
+
+.project_list:hover{
+      box-shadow: 2px 5px 8px rgba(0, 145, 255, 0.252);
+      & a{
+            border: .5px solid white;
+            padding: 3px 8px;
+
+      }
+}
